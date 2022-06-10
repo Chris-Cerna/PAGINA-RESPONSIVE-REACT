@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+  font-family: sans-serif;
+}
+.contenedor{
+  width: 90%;
+  max-width: 1500px;
+  min-width: 200px;
+  margin: auto;
+}
+
+.bg_animate{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #038be6, #1c204d);
+  position: relative;
+  overflow: hidden;
+
+}
+.header_nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header_nav .contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.header_nav h1{
+  color:rgb(59, 199, 241);
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.header_nav nav a{
+  color: rgb(59, 199, 241);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.banner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+
+.banner_title h2{
+  color: rgb(34, 25, 71);
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 700px;
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  
+}
+
+.banner_title .llamanos{
+  color: rgb(111, 99, 218);
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  background: #1A2849;
+  padding: 20px;
+  border-radius: 50%;
+}
+.banner_img{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  max-height: 450px;
+  display: flex;
+}
+
+.banner_img{
+  animation: movimiento 2.5s linear infinite;
+}
+
+
+
+
+
+.burbuja{
+  border-radius: 50%;
+  background: #c3b9ff;
+  opacity: 0;
+
+  position: absolute;
+  bottom: -150;
+
+
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(2){
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(3){
+  width: 35px;
+  height: 35px;
+  left: 20%;
+  animation-duration: 3s;
+  animation-delay: 2.8s;
+}
+
+.burbuja:nth-child(4){
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  animation-duration: 3s;
+  animation-delay: 3.3s;
+}
+
+.burbuja:nth-child(5){
+  width: 15px;
+  height: 15px;
+  left: 10%;
+  animation-duration: 3s;
+  animation-delay: 4.6s;
+}
+
+.burbuja:nth-child(6){
+  width: 60px;
+  height: 60px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 5.6s;
+}
+
+.burbuja:nth-child(7){
+  width: 30px;
+  height: 30px;
+  left: 40%;
+  animation-duration: 3s;
+  animation-delay: 6.4s;
+}
+
+.burbuja:nth-child(8){
+  width: 120px;
+  height: 120px;
+  left: 70%;
+  animation-duration: 3s;
+  animation-delay: 7.4s;
+}
+
+.burbuja:nth-child(9){
+  width: 65px;
+  height: 65px;
+  left: 53%;
+  animation-duration: 3s;
+  animation-delay: 8.2s;
+}
+
+.burbuja:nth-child(10){
+  width: 39px;
+  height: 39px;
+  left: 45%;
+  animation-duration: 3s;
+  animation-delay: 9.5s;
+}
+
+@keyframes burbujas{
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+
+  30%{
+    transform: translateX(100px);
+  }
+
+  50%{
+    opacity: .4 ;
+  }
+
+  100%{
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+@keyframes movimiento{
+  0%{
+    transform: translateY(0)
+  }
+
+  50%{
+    transform: translateY(50px)
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
